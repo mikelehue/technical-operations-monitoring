@@ -28,7 +28,7 @@ The pipeline is designed to support:
 ## Architecture
 
 ```text
-RRaw Sensor Data
+Raw Sensor Data
     ↓
 Extract
     ↓
