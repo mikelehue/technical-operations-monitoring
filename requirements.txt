@@ -2,4 +2,3 @@ pandas
 sqlalchemy
 matplotlib
 streamlit
-openai

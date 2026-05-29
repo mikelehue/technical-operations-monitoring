@@ -44,3 +44,20 @@ def save_report_table(df, file_name, output_dir=REPORT_OUTPUT_PATH):
     df.to_csv(output_path, index=False)
 
     print(f"Report saved to: {output_path}")
+
+
+REPORT_TEXT_PATH = Path("outputs/reports")
+
+
+def save_text_report(text, file_name, output_dir=REPORT_TEXT_PATH):
+    """
+    Save text report to a .txt file.
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    output_path = output_dir / file_name
+
+    with open(output_path, "w", encoding="utf-8") as file:
+        file.write(text)
+
+    print(f"Text report saved to: {output_path}")

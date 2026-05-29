@@ -1,0 +1,21 @@
+TECHNICAL OPERATIONS EXECUTIVE SUMMARY
+
+The monitoring pipeline processed industrial IoT sensor data and generated operational KPIs, data quality checks, and automated alerts.
+
+Key findings:
+- Highest anomaly rate: Machine 43 with 10.55%.
+- Highest maintenance rate: Machine 43 with 21.51%.
+- Highest average downtime risk: Machine 43 with 10.55%.
+- Most common non-normal failure type: Vibration Issue (3129 events).
+- Total operational alerts generated: 38.
+- Machines affected by at least one alert: 25.
+- Average daily energy consumption: 2.75.
+
+Operational interpretation:
+The system identifies a small subset of machines requiring closer monitoring due to elevated anomaly, maintenance, or downtime-risk indicators. These outputs can support preventive maintenance planning, operational prioritization, and technical follow-up.
+
+Recommended next actions:
+- Review machines with repeated alerts.
+- Investigate dominant failure modes.
+- Track whether anomaly rates increase over time.
+- Use KPI tables and alert reports as inputs for dashboards or weekly operations reviews.
