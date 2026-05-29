@@ -185,6 +185,6 @@ The pipeline automatically:
 
 ## About This Project
 
-This project was built as part of a transition toward Technical Operations, Operations Analytics, and Industrial Monitoring roles.
+This project was built as part of a transition toward Technical Operations roles.
 
-The focus is not pure analytics, but using data to improve operational visibility, prioritization, and decision-making in technical environments.
+The focus is using data to improve operational visibility, prioritization, and decision-making in technical environments.
