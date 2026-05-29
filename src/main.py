@@ -3,7 +3,8 @@
 from extract import load_raw_data
 from transform import clean_data
 from data_quality import run_data_quality_checks
-from load import save_processed_data, save_kpi_table
+from load import save_processed_data, save_kpi_table, save_report_table
+from alerts import generate_alerts
 
 from kpis import (
     calculate_anomaly_rate_by_machine,
@@ -53,6 +54,9 @@ def run_pipeline():
     print(daily_energy.head())
 
     save_processed_data(clean_df)
+
+    alerts_report = generate_alerts(anomaly_rate, maintenance_rate, downtime_risk)
+    save_report_table(alerts_report, "alerts_report.csv")
 
 
 if __name__ == "__main__":
