@@ -2,7 +2,7 @@
 
 A modular ETL, KPI monitoring, and operational alerting pipeline for industrial IoT sensor data.
 
-This project simulates a real-world technical operations workflow where machine sensor data is transformed into operational insights, alerts, and executive reports.
+This project implements a technical operations monitoring workflow for industrial IoT sensor data.
 
 ---
 
@@ -28,24 +28,18 @@ The pipeline is designed to support:
 ## Architecture
 
 ```text
-Raw Sensor Data
-      │
-      ▼
+RRaw Sensor Data
+    ↓
 Extract
-      │
-      ▼
+    ↓
 Transform
-      │
-      ▼
+    ↓
 Data Quality Checks
-      │
-      ▼
+    ↓
 KPI Generation
-      │
-      ▼
+    ↓
 Alert Generation
-      │
-      ▼
+    ↓
 Executive Summary
 ```
 
@@ -118,6 +112,16 @@ outputs/tables/
 ├── failure_type_distribution.csv
 └── daily_energy_consumption.csv
 ```
+
+## Example Results
+
+Using a dataset of 100,000 machine sensor records, the pipeline:
+
+- Validated data quality
+- Generated machine-level operational KPIs
+- Identified high-risk machines
+- Produced automated operational alerts
+- Generated an executive summary report
 
 ### Reports
 
